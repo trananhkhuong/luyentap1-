@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let total = 0;
+    let number = [10, 14, 3, 0, 12, 22, 34,48, 47, 59, 49, 53, 99];
+    let max = number[0];
+    for (let i = 0; i < number.length; i++) {
+        total = total + number[i];
+        if (number[i] > max){
+                max = number[i];
+        }
+    }
+    let trungBinh = total/number.length;
+    document.write('Max la : ' + max);
+    document.write('  Average : ' + trungBinh.toFixed(3));
+
+</script>
+</body>
+</html>

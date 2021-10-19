@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button value="nhap" onclick="getout()">Click</button>
+<p id="niememdi"></p>
+<script>
+    function getout() {
+        let number = [-9, 1, 7, -8, 74, 15, -42, 34, 98, -99];
+        nhap = document.getElementById("nhap").value;
+        number.push(nhap);
+        for (let i = 0; i < number.length; i++) {
+            if (nhap % 1 === 0) {
+                document.getElementById("niememdi").innerHTML = ("V is in the array");
+            }else {
+                document.getElementById("niememdi").innerHTML = ("V is not in the array");
+            }
+        }
+    }
+</script>
+</body>
+</html>
